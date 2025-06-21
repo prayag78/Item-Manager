@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react"
 import { toast } from "react-hot-toast"
 import { AppContext } from "../context/AppContext"
+import { X } from 'lucide-react';   
 
 const itemTypes = [
   "Shirt",
@@ -200,7 +201,7 @@ const AddItems = () => {
                 className="absolute top-1 right-1 bg-red-600 text-white w-5 h-5 rounded-full flex items-center justify-center text-xs hover:bg-red-700"
                 aria-label="Remove cover image"
               >
-                &times;
+                <X />
               </button>
             </div>
           )}
@@ -233,7 +234,7 @@ const AddItems = () => {
                     className="absolute top-1 right-1 bg-red-600 text-white w-5 h-5 rounded-full flex items-center justify-center text-xs hover:bg-red-700"
                     aria-label={`Remove additional image ${index + 1}`}
                   >
-                    &times;
+                    <X />
                   </button>
                 </div>
               ))}
